@@ -1,0 +1,7 @@
+<section data-ng-controller="CustomerController" data-ng-init="findOne()">
+    <h1 data-ng-bind="customer.fullName"></h1>
+    <div data-ng-show="authentication.user._id == customer.creator._id">
+        <a href="/#!/customer/{{customer._id}}/edit">Edit</a>
+        <a href="#" data-ng></a>
+    </div>
+</section>

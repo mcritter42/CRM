@@ -1,0 +1,27 @@
+<section data-ng-controller="CustomerController">
+    <h1> New Customer</h1>
+    <form data-ng-submit="create()" novalidate>
+        <div>
+            <label for="firstName">First Name</label>
+            <div>
+                <input type="text" data-ng-model="firstName" id="firstName" placeholder="First Name" required>
+            </div>
+            
+            <label for="lastName">Last Name</label>
+            <div>
+                <input type="text" data-ng-model="lastName" id="lastName" placeholder="Last Name" required>
+            </div>
+            
+            <label for="email">Email</label>
+            <div>
+                <input type="text" data-ng-model="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+            <div data-ng-show="error">
+                <strong data-ng-bind="error"></strong>
+            </div>
+        </div>
+    </form>
+</section>
